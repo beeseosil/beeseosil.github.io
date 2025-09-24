@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making a Nutrient Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+        <div id="sidebar-placeholder"></div>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-content">
+          
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Making a Nutrient Solution</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <small class="text-muted">2025-09-24</small>
+            </div>
+          </div>
+
+          <div class="blog-post">
+          
+            <div class="p-4 rounded border text-white shadow-sm custom-warning-box">
+              <h5 class="fw-bold">Plundered from</h5>
+              <ol>
+              <li>Growing Direct-Seeded Watercress by Two Non-circulating Hydroponic Methods</li>
+              <li>농진청 수경재배 가이드라인, 잎들깨 수경재배 가이드라인</li>
+              <li>Cornell CEA Indoor Hydroponics Guidelines</li>
+              </ol>
+            </div>
+            
+            <p class='lead'>
+              Roots of hydroponic plants are exposured to nutrient water mostly without any bufferings. As we know high EC is always worse and harder to revert than its opposite.
+            </p>
+            
+            <p>It just takes less than 6 hours to see the latest effect. Below shows perillia suffering from high EC (from 1.7 to >8) by incidental mix of a CaNO3 stock solution after less than 10 hours.</p>
+            
+            <p>This shows a broccoli leaf falling probably because of inapproprite >3.5 EC.</p>
+            
+            <p>
+            While so, most plants has wide range of EC (~2.5) without a growth stunt or catastrophic event. Especially leafy greens are so. There's an exception like a broccoli and strawberry. Those are picky.</p>
+            
+            <p>
+              You can use any water soluble, NPK plus micronutrients fertilizer blends. Hydroponics-only blends are always available in separated stock solutions or powders. Solution products are expansive than powder products.
+            </p>
+            
+            <p>Prepare rubber gloves, separated cups, buckets or containers for each mix. Mixing diretly rather than diluting, broth A and B causes precious Ca ions to be participated out. This is irreversible loss.</p>
+            
+            <p>Do not mix any blend products. You'll see immediate insolubillization. If needed, add a non-blended water-soluble chemical (e.g. K2SO4) diluted in water.</p>
+            
+            <p class='lead'>According to the Kratky's article, and practically, a .264ml addition of both A and B broth to total 1 liter of water increases EC by .1. You can prepare a nutrient water very easily and without an EC meter.</p>
+            
+            <p>I'm using Masterblend lettuce similar to Chem-Gro lettuce, and completely fits to that guide. I'm sure this applies to any hydroponics blends.<p>
+            
+            <img src="1a.jpg" alt="" class="img-fluid">
+            
+            <p class='lead'>Do not mind pH for preparing the tank water. There's no consistent result that initial pH out of the appropriate pH 6.0 plus or minus is good for yield or growth.</p>
+            
+            <p>A blueberry is the only exception. Initial pH falls into approprite <7.0 range with a proper fertilizer blending. I don't buy a pH meter and 7.00 buffer solution. An EC meter is way more helpful in hydroponics.</p>
+            
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
+      fetch('sidebar.html')
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById('sidebar-placeholder').innerHTML = html;
+          });
+  </script>
+  </body>
+</html>
