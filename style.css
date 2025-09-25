@@ -1,5 +1,6 @@
 .custom-warning-box {
     background-color: #ef4026;
+    margin:0 0 20px 0;
 }
 
 .card-body h5 {font-size:1.1rem; font-weight:300; line-height:0.8rem;}
@@ -24,6 +25,8 @@ z-index: 1000;
 padding: 20px;
 overflow-y: auto;
 color: #343a40;
+/* *** FIX 1: Set the fixed width to match the margin of main-content *** */
+width: 300px;
 }
 
 .main-content {
@@ -50,7 +53,8 @@ height: auto;
 }
 
 .main-content {
-    margin-left: 0;
+/* This ensures the margin is gone on mobile */
+margin-left: 0;
+padding: 20px;
 }
-
 }
