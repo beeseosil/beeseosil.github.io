@@ -3,9 +3,17 @@
     margin: 0.9rem;
 }
 
+.card-body h5 {font-size:1.1rem; font-weight:300; line-height:0.8rem;}
+.card-body p {font-size:0.9rem; line-height:1.0rem; margin:0 0 0 0.8rem;}
+
 html {
 font-family: Pretendard, sans-serif;
 font-size: 1.2rem;
+}
+
+.fixed-ratio-card .card-img-top {
+aspect-ratio: 2 / 0.8;
+object-fit: cover;
 }
 
 .sidebar {
@@ -45,12 +53,5 @@ height: auto;
 .main-content {
     margin-left: 0;
 }
-
-.fixed-ratio-card .card-img-top {
-aspect-ratio: 2 / 0.8;
-object-fit: cover;
-}
-.card-body h5 {font-size:1.1rem; font-weight:300; line-height:0.8rem;}
-.card-body p {font-size:0.9rem; line-height:1.0rem; margin:0 0 0 0.8rem;}
 
 }
