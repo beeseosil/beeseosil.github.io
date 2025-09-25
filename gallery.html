@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+  </style>
+ </head>
+ <body>
+
+  <div class="container-fluid">
+   <div id="sidebar-placeholder"></div>
+   <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-content">
+          
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+     <h1 class="h2">Gallery</h1>
+     <div class="btn-toolbar mb-2 mb-md-0">
+      <small class="text-muted"></small>
+     </div>
+    </div>
+
+    <div class="row">
+     <div class="col-md-6 mb-4">
+      <div class="card fixed-ratio-card">
+       <img src="gallery/total_250814.jpg" data-full-size="path/to/your/image1.jpg" class="card-img-top modal-trigger" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Image 1 Description">
+       <div class="card-body">
+        <h5 class="card-title">Headline for Image 1</h5>
+        <p class="card-text">A brief description</p>
+       </div>
+      </div>
+     </div>
+
+     <div class="col-md-6 mb-4">
+      <div class="card fixed-ratio-card">
+       <img src="gallery/total_250822.jpg" data-full-size="path/to/your/image2.jpg" class="card-img-top modal-trigger" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Image 2 Description">
+       <div class="card-body">
+        <h5 class="card-title">Headline for Image 2</h5>
+        <p class="card-text">A brief description</p>
+       </div>
+      </div>
+     </div>
+
+     <div class="col-md-6 mb-4">
+      <div class="card fixed-ratio-card">
+       <img src="gallery/total_250916.jpg" data-full-size="path/to/your/image3.jpg" class="card-img-top modal-trigger" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Image 3 Description">
+       <div class="card-body">
+        <h5 class="card-title">Headline for Image 3</h5>
+        <p class="card-text">A brief description</p>
+       </div>
+      </div>
+     </div>
+
+     <div class="col-md-6 mb-4">
+      <div class="card fixed-ratio-card">
+       <img src="gallery/2nd_250920.jpg" data-full-size="path/to/your/image4.jpg" class="card-img-top modal-trigger" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Image 4 Description">
+       <div class="card-body">
+        <h5 class="card-title">Headline for Image 4</h5>
+        <p class="card-text">A brief description</p>
+       </div>
+      </div>
+     </div>
+
+     <div class="col-md-6 mb-4">
+      <div class="card fixed-ratio-card">
+       <img src="gallery/3rd_250919.jpg" data-full-size="path/to/your/image4.jpg" class="card-img-top modal-trigger" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Image 4 Description">
+       <div class="card-body">
+        <h5 class="card-title">Headline for Image 4</h5>
+        <p class="card-text">A brief description</p>
+       </div>
+      </div>
+     </div>
+
+    </div>
+   </main>
+  </div>
+ 
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+     <div class="modal-body">
+      <img src="" class="img-fluid" id="modalImage" alt="Enlarged image">
+     </div>
+    </div>
+   </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
+   fetch('sidebar.html')
+    .then(response => response.text())
+    .then(html => {
+     document.getElementById('sidebar-placeholder').innerHTML = html;
+    });
+
+   // The JavaScript function to handle the modal
+   document.querySelectorAll('.modal-trigger').forEach(img => {
+    img.addEventListener('click', function() {
+     const fullSizeSrc = this.getAttribute('data-full-size');
+     document.getElementById('modalImage').src = fullSizeSrc;
+    });
+   });
+  </script>
+ </body>
+</html>
