@@ -1,19 +1,6 @@
-.custom-warning-box {
-    background-color: #ef4026;
-    margin:0 0 20px 0;
-}
-
-.card-body h5 {font-size:1.1rem; font-weight:300; line-height:0.8rem;}
-.card-body p {font-size:0.9rem; line-height:1.0rem; margin:0 0 0 0.8rem;}
-
 html {
-font-family: Pretendard, sans-serif;
-font-size: 1.2rem;
-}
-
-.fixed-ratio-card .card-img-top {
-aspect-ratio: 2 / 0.8;
-object-fit: cover;
+    font-family: Pretendard, sans-serif;
+    font-size: 1.2rem;
 }
 
 .sidebar {
@@ -25,7 +12,6 @@ z-index: 1000;
 padding: 20px;
 overflow-y: auto;
 color: #343a40;
-/* *** FIX 1: Set the fixed width to match the margin of main-content *** */
 width: 300px;
 }
 
@@ -41,8 +27,33 @@ color: #343a40;
 .blog-post img {
 max-width: 100%;
 height: auto;
-border-radius: 8px;
+border-radius: 12px;
 margin: 20px 0;
+}
+
+.custom-warning-box {
+    background-color: #ef4026;
+    margin:0 0 0.8rem 0;
+    font-size:0.8rem;
+}
+.custom-warning-box h5{
+    font-size:0.8rem;
+}
+.custom-warning-box ol{
+    font-weight:300;
+    line-height:1.2rem;
+    margin:0 0 0.4rem 0;
+}
+
+.card-body h5 {
+    font-size:1rem; font-weight:300; line-height:0.8rem;
+}
+.card-body p {
+    font-size:0.8rem; line-height:1.0rem; margin:0 0 0 0.6rem;
+}
+.fixed-ratio-card .card-img-top {
+    aspect-ratio: 2 / 0.8;
+    object-fit: cover;
 }
 
 @media (max-width: 767.98px) {
@@ -53,7 +64,6 @@ height: auto;
 }
 
 .main-content {
-/* This ensures the margin is gone on mobile */
 margin-left: 0;
 padding: 20px;
 }
