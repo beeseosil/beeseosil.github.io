@@ -30,31 +30,55 @@
       </ol>
      </div>
           
-     <p class="lead">Light Source: LED</p>
-     <p>I'm using two kinds of light sources: a custom-made LED module (blue-white, red-white) and a LED strip (blue-white, red-white, red-red, blue-blue, red-red-blue, 6500K).</p>
-     <p>Plants need PAR: Photosynthetically Active Radiation, which is generally 400nm to 700nm. PAR should be measured in PPFD ($\mu mol/m^2/s$).</p>
-     <img src="1a.jpg" alt="" class="img-fluid">
-     <p>A typical recommendation for leafy vegetables is 150-200 $\mu mol/m^2/s$ with DLI (Daily Light Integral) of $10-15 mol/m^2/d$ for 14 hours. This is a very important value that a novice have to comply, as light source is the most expensive and time-sensitive component in the setup.</p>
-     <p>It is convenient to use the calculator mentioned in the list (https://edman007.com/article/Plants/PAR-Lighting-Calculator). You can calculate an appropriate height given the power, efficiency, and desired PPFD.</p>
-     <p>I set to 250 $\mu mol/m^2/s$ for 14 hours which is a bit harsh for seedlings, but it's acceptable for my setup.</p>
-     <img src="1b.jpg" alt="" class="img-fluid">
-     <p class="lead">Temperature Problems</p>
-     <p>LED is hot. It is not recommended to use the same light source in summer as heat will be fatal to the roots and growth. The air temperature is not very important as roots will be suffocate when water temperature is higher than 25 celsius.</p>
-     <p>The solution for this is to use a fan in the water to increase air flow and evaporation.</p>
-     <p>I have two fans to vent the heat from the LED. This made the light source a noisy and bulky setup, which is not recommended if there's no way to vent the hot air to outside.</p>
-     <img src="1c.jpg" alt="" class="img-fluid">
-     <p>A plant is extremely susceptible to the high temperature. Using artificial light in summer is an issue for the plant itself. The majority of the power is consumed by the electric light source rather than a plant. Indoor farms are already suffering from such an inefficiency.</p>
+            <p class='lead'>
+              A light is the formost component for an indoor growing.
+            </p>
             
-     <p class='lead'>Shelf</p>
+            <p>Two light units are used for growing plants. PPFD is an unit for effective light power for photosynthesis in a square area (m2) per second for a given distannce. DLI is a total required or received PPFD amount per day. Most crop plants demands 200 DLI or higher with few exceptions (e.g. celery).</p>
             
-     <img src="1d.jpg" alt="" class="img-fluid">
-     <p>A stand or shelf is a baseline hardware have to be tough and versatile. At the first time I used desks. This would be misearable but it's quite acceptable as the desk still usable for a workbench. Later I found it's bullshit to crawl to the beneath, so I stacked this on to the same desk. This unintentionally maked the setting similar to indoor plant stands.</p>
+            <p>
+              At the first time, I thought three of 5W LED would be enough for leafy greens and cherry tomatos. Most sprouts are stretched and vanished in a night. I lose dozens of sprouts because of this. You can find this is absurd, as a weak sunlight is enough to light a room but completely unsatisfying for plants. Crop plants demand a lot as sunlight is exceptionally powerful in watt.
+            </p>
             
-     <img src="1e.jpg" alt="" class="img-fluid">
-     <p>Eventually I tried to install another LED modules and fans to the another desk, as you can see there were a leak. As the desk is made from MDF or something similar to wood, this made nothing attached in the bottom of the desk panel.</p>
+            <img src="1a.jpg" alt="" class="img-fluid">
             
-     <img src="1f.jpg" alt="" class="img-fluid">
-     <p>The shelf I'm using now is satisfying. It's strong and adjustable, and ridiculously fits to my intentions so there's no irreversible modifications.</p>
+            <p>There's variety of choices for artificial light sources. Any light sources regardless of an underlying technology (bulbs) or spectrum is usable.</p>
+
+            <p>Room lamps: Room lamps are LED lights with fixture and stands. There's no room for those products. It's not able to promote planting density with these products. Some sellers saying their lamps are plant raising lamp '식물등' with a photo with PPFD being measured with free version of smartphone measurement apps, with ads in the app screen, and without a diffuser.</p>
+            
+            <p>LED modules: This is a typical board module or strip of LED chips, and usually uses 12V DC input from an external power supply. This is also a prevalent choice for small-sized commercial farms for leafy greens with a short crop cycle.</p>
+            
+            <p>Plant LED products: One of famous product is the GE Arize horticulture lights. There's Arize copycats on a marketplace, specific to an industrial-grade farm and available to personals. Those are with a PPFD benchmark result, neat hardware, providing 50W+ output power per module from a mere AC input. The reason that I didn't used those things is a small module footprint. Power LED parts are required to have a explict thermal parts like a 5x5x1cm heatsink per 1W. A semiconductor with a smaller footprint demands a good cooler. If you're affordable for thermal solutions, those would be a choice.</p>
+            
+            <p>Room lights: There is a LED module product for a upgrading room lights. Those are cheap and called 'LED module parts' on marketplaces. Specifications of such products are mostly 25-30W 4500-6500K output from an AC input, with a suitable footprint and a cheap price. This product is easy to attach to a steel products with a magnet.</p>
+            
+            <img src="1b.jpg" alt="" class="img-fluid">
+            
+            <p class='lead'>
+              LEDs are semiconductor and weak to heat.
+            </p>
+            
+            <p>LEDs are weak to high temperature like modern CPUs - power consumption rises and performance dropping, as temperature rises. You should take account of heat dissipation. LED products with external power supply is heavy but relible (as the supply could be replaced), and the heat source can be separated. Another major factor affects to MBTF is a capacitor in a power supply, which is also sensitive to temperature.</p>
+            
+            <p>I got a cheap fan module from an online scrap market. Those are unexceptedly usable for my case. The LED modules were hot and I can't even touch it. I suggest to use fans larger than 120mm for acceptable performance.</p>
+            
+<figure class="figure">
+  <img src="1c.jpg" class="img-fluid rounded" alt="">
+  <figcaption class="figure-caption text-left">LED Lumen-temperature Curve <Final Report: Demonstration Assessment of LED Street Lighting, City of Oakland CA></figcaption>
+</figure>
+            
+            <p>The heat problem shouldn't be underestimated unless you want to change the parts frequently. You won't want to use an air-con for a heat from an electric light source rather than a plant. Indoor farms are already suffering from such an inefficiency.</p>
+            
+            <p class='lead'>Shelf</p>
+            
+            <img src="1d.jpg" alt="" class="img-fluid">
+            <p>A stand or shelf is a baseline hardware have to be tough and versatile. At the first time I used desks. This would be misearable but it's quite acceptable as the desk still usable for a workbench. Later I found it's bullshit to crawl to the beneath, so I stacked this on to the same desk. This unintentionally maked the setting similar to indoor plant stands.</p>
+            
+            <img src="1e.jpg" alt="" class="img-fluid">
+            <p>Eventually I tried to install another LED modules and fans to the another desk, as you can see there were a leak. As the desk is made from MDF or something similar to wood, this made nothing attached in the bottom of the desk panel.</p>
+            
+            <img src="1f.jpg" alt="" class="img-fluid">
+            <p>The shelf I'm using now is satisfying. It's strong and adjustable, and ridiculously fits to my intentions so there's no irreversible modifications.</p>
             
     </div>
    </main>
