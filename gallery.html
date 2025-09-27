@@ -114,12 +114,20 @@
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  
   <script>
    fetch('sidebar.html')
     .then(response => response.text())
     .then(html => {
      document.getElementById('sidebar-placeholder').innerHTML = html;
     });
+   document.getElementById('imageModal').addEventListener('show.bs.modal', event => {
+     const button = event.relatedTarget;
+     const imageSource = button.getAttribute('data-full-size');
+     const modalImage = document.getElementById('modalImage');
+     modalImage.src = imageSource;
+   });
   </script>
- </body>
+
+</body>
 </html>
