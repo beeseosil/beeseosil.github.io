@@ -1,6 +1,6 @@
 html {
     font-family: Pretendard, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 }
 
 .sidebar {
@@ -20,15 +20,17 @@ margin-left: 300px;
 padding: 20px;
 }
 
-.blog-post h1, .blog-post h2 {
-color: #343a40;
-}
-
 .blog-post img {
 max-width: 100%;
 height: auto;
-border-radius: 12px;
-margin: 20px 0;
+border-radius: 24px;
+}
+
+.blog-post ul{
+	list-style-type:none;
+}
+.blog-post li{
+	
 }
 
 .custom-warning-box {
@@ -37,12 +39,10 @@ margin: 20px 0;
     font-size:0.8rem;
 }
 .custom-warning-box h5{
-    font-size:0.8rem;
+    font-size:1rem;
 }
 .custom-warning-box ol{
-    font-weight:300;
-    line-height:1.2rem;
-    margin:0 0 0.4rem 0;
+    margin:0 auto;
 }
 
 .card-body h5 {
@@ -52,8 +52,17 @@ margin: 20px 0;
     font-size:0.8rem; line-height:1.0rem; margin:0 0 0 0.6rem;
 }
 .fixed-ratio-card .card-img-top {
-    aspect-ratio: 2 / 0.8;
+    aspect-ratio: 2/0.8;
     object-fit: cover;
+    object-position:top left;
+    width:100%;
+}
+
+.figure .img-fluid {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position:top left;
+    width: 100%;
 }
 
 @media (max-width: 767.98px) {

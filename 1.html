@@ -27,22 +27,32 @@
       <ol>
        <li>A Systematic Literature Review on Parameters Optimization for Smart Hydroponic Systems</li>
        <li>https://edman007.com/article/Plants/PAR-Lighting-Calculator</li>
+       <li>Indoor Ag Science Cafe #66: Close-canopy lighting for vertical farms</li>
       </ol>
      </div>
-          
-            <p class='lead'>
-              A light is the formost component for an indoor growing.
-            </p>
+            <p class='lead'>A light source is the foremost element for indoor farming.</p>
             
-            <p>Two light units are used for growing plants. PPFD is an unit for effective light power for photosynthesis in a square area (m2) per second for a given distannce. DLI is a total required or received PPFD amount per day. Most crop plants demands 200 DLI or higher with few exceptions (e.g. celery).</p>
+            <p>I thought three of 5W LED would be enough for leafy greens and cherry tomatos. Most sprouts are stretched and vanished in a night. I lose dozens of sprouts because of this. You can find this is absurd, as weak sunlight is enough to light a room but completely unsatisfying for plants. Crop plants demand a lot as sunlight is high in watt.</p>
             
-            <p>
-              At the first time, I thought three of 5W LED would be enough for leafy greens and cherry tomatos. Most sprouts are stretched and vanished in a night. I lose dozens of sprouts because of this. You can find this is absurd, as a weak sunlight is enough to light a room but completely unsatisfying for plants. Crop plants demand a lot as sunlight is exceptionally powerful in watt.
-            </p>
+<figure class="figure">
+<img src="res/1a.jpg" class="img-fluid rounded" alt="">
+<figcaption class="figure-caption text-left">Seedlings with 10W LED</figcaption>
+</figure>
             
-            <img src="1a.jpg" alt="" class="img-fluid">
+            <p>Two light units are used for growing plants. PPFD is an unit for effective light power for photosynthesis in a square area (m2) per second for a given distannce. DLI is a total required or received PPFD amount per day. Most crop plants demands 200 DLI or higher with few exceptions.</p>
             
-            <p>There's variety of choices for artificial light sources. Any light sources regardless of an underlying technology (bulbs) or spectrum is usable.</p>
+            <p>For using PPFD converter, you have to know a color temperature, lux or wattage, light emitting distance and fixture angle of the light source. Also you should use a wattage per meter. According to the article (2), HPS 240W (2500K equals to LED 80~120W 6500K) per square meter is enough to raising a tomato. As tomato is the highest light-dependant, this would be enough for other plants.</p>
+
+<figure class="figure">
+<img src="res/1z.jpg" class="img-fluid rounded" alt="">
+<figcaption class="figure-caption text-left">Fixture angle and distance (emitting surface to plants) does matter</figcaption>
+</figure>
+
+            <p>Also according to the article (2, 3), a fixture (a device that limits light angle from emitting surface, in here) is also important. You may assume that the photons are wasted if the heat and light is not constrained within the compartment or floor. A reflective flim is necessory for the artificial light source.</p>
+            
+<p class="lead">Any light sources regardless of an underlying technology (bulbs) or spectrum is usable. I'll only talk about a LED, which is practical in any personal usages.</p>
+
+            <p>There're diversity of things to be considered if you're going to use a full-time artificial light source. Most homebrew conditions are cannot be measured. I suggest you to briefly assume things. Get a minimum wattage per square meter or a PPFD based on a LED wattage or lumen, and color temperature or chromaticity.</p>
 
             <p>Room lamps: Room lamps are LED lights with fixture and stands. There's no room for those products. It's not able to promote planting density with these products. Some sellers saying their lamps are plant raising lamp '식물등' with a photo with PPFD being measured with free version of smartphone measurement apps, with ads in the app screen, and without a diffuser.</p>
             
@@ -51,33 +61,46 @@
             <p>Plant LED products: One of famous product is the GE Arize horticulture lights. There's Arize copycats on a marketplace, specific to an industrial-grade farm and available to personals. Those are with a PPFD benchmark result, neat hardware, providing 50W+ output power per module from a mere AC input. The reason that I didn't used those things is a small module footprint. Power LED parts are required to have a explict thermal parts like a 5x5x1cm heatsink per 1W. A semiconductor with a smaller footprint demands a good cooler. If you're affordable for thermal solutions, those would be a choice.</p>
             
             <p>Room lights: There is a LED module product for a upgrading room lights. Those are cheap and called 'LED module parts' on marketplaces. Specifications of such products are mostly 25-30W 4500-6500K output from an AC input, with a suitable footprint and a cheap price. This product is easy to attach to a steel products with a magnet.</p>
+
+<figure class="figure">
+<img src="res/1b.jpg" class="img-fluid rounded" alt="">
+<figcaption class="figure-caption text-left">LED modules installed the beneath of a desk</figcaption>
+</figure>
             
-            <img src="1b.jpg" alt="" class="img-fluid">
+            <p class='lead'>LEDs are weak to heat. Enterprise products comes with big heatsink even the product is without a power supply.</p>
             
-            <p class='lead'>
-              LEDs are semiconductor and weak to heat.
-            </p>
-            
-            <p>LEDs are weak to high temperature like modern CPUs - power consumption rises and performance dropping, as temperature rises. You should take account of heat dissipation. LED products with external power supply is heavy but relible (as the supply could be replaced), and the heat source can be separated. Another major factor affects to MBTF is a capacitor in a power supply, which is also sensitive to temperature.</p>
+            <p>LEDs are energy efficient but they're weak to high temperature than other bulb technologies. You should take account of heat dispersion. LED products with an external power supply is heavy but relible, and the heat source can be separated. Another major factor affects to MBTF is a capacitor in a power supply, which is also sensitive to temperature.</p>
             
             <p>I got a cheap fan module from an online scrap market. Those are unexceptedly usable for my case. The LED modules were hot and I can't even touch it. I suggest to use fans larger than 120mm for acceptable performance.</p>
             
 <figure class="figure">
-  <img src="1c.jpg" class="img-fluid rounded" alt="">
-  <figcaption class="figure-caption text-left">LED Lumen-temperature Curve <Final Report: Demonstration Assessment of LED Street Lighting, City of Oakland CA></figcaption>
+  <img src="res/1c.jpg" class="img-fluid rounded" alt="">
+  <figcaption class="figure-caption text-left">LED Lumen or Lifespan - Temperature Curve: Final Report: Demonstration Assessment of LED Street Lighting, City of Oakland CA</figcaption>
 </figure>
             
             <p>The heat problem shouldn't be underestimated unless you want to change the parts frequently. You won't want to use an air-con for a heat from an electric light source rather than a plant. Indoor farms are already suffering from such an inefficiency.</p>
             
             <p class='lead'>Shelf</p>
             
-            <img src="1d.jpg" alt="" class="img-fluid">
+<figure class="figure">
+  <img src="res/1d.jpg" class="img-fluid rounded" alt="">
+  <figcaption class="figure-caption text-left">A workbench-beneath configuration</figcaption>
+</figure>
+
             <p>A stand or shelf is a baseline hardware have to be tough and versatile. At the first time I used desks. This would be misearable but it's quite acceptable as the desk still usable for a workbench. Later I found it's bullshit to crawl to the beneath, so I stacked this on to the same desk. This unintentionally maked the setting similar to indoor plant stands.</p>
-            
-            <img src="1e.jpg" alt="" class="img-fluid">
+
+<figure class="figure">
+  <img src="res/1e.jpg" class="img-fluid rounded" alt="">
+  <figcaption class="figure-caption text-left">A stacked workbenches</figcaption>
+</figure>
+
             <p>Eventually I tried to install another LED modules and fans to the another desk, as you can see there were a leak. As the desk is made from MDF or something similar to wood, this made nothing attached in the bottom of the desk panel.</p>
             
-            <img src="1f.jpg" alt="" class="img-fluid">
+<figure class="figure">
+  <img src="res/1f.jpg" class="img-fluid rounded" alt="">
+  <figcaption class="figure-caption text-left">A configuration with steel shelf</figcaption>
+</figure>
+
             <p>The shelf I'm using now is satisfying. It's strong and adjustable, and ridiculously fits to my intentions so there's no irreversible modifications.</p>
             
     </div>
