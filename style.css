@@ -1,6 +1,6 @@
 html {
-    font-family: Pretendard, sans-serif;
-    font-size: 1.15rem;
+  font-family: "Spline Sans Mono", Pretendard, Roboto Sans Mono, Cascadia, "Cascadia Code", sans-serif;
+  font-size: 1.2rem;
 }
 
 .sidebar {
@@ -29,27 +29,35 @@ border-radius: 24px;
 .blog-post ul{
 	list-style-type:none;
 }
-.blog-post li{
-	
-}
 
 .custom-warning-box {
     background-color: #ef4026;
-    margin:0 0 0.8rem 0;
+    margin:0 0 1.0rem 0;
     font-size:0.8rem;
+    font-weight:200;
 }
-.custom-warning-box h5{
-    font-size:1rem;
-}
+
 .custom-warning-box ol{
-    margin:0 auto;
+    margin:0;
+}
+
+.custom-info-box {
+    background-color: blue;
+    margin:0 0 1.0rem 0;
+    font-size:0.8rem;
+    font-weight:200;
+}
+
+.box-heading {
+  font-size:1.0rem;
+  font-weight:200;
 }
 
 .card-body h5 {
-    font-size:1rem; font-weight:300; line-height:0.8rem;
+    font-size:1.0rem; line-height:0.8rem; margin:0 0 0.2rem 0;
 }
 .card-body p {
-    font-size:0.8rem; line-height:1.0rem; margin:0 0 0 0.6rem;
+    font-size:0.8rem; line-height:0.8rem; margin:0 0 0 0.4rem;
 }
 .fixed-ratio-card .card-img-top {
     aspect-ratio: 2/0.8;
