@@ -1,6 +1,15 @@
 html {
   font-family: "Spline Sans Mono", Pretendard, Roboto Sans Mono, Cascadia, "Cascadia Code", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.hangul {
+  font-family:Pretendard,serif,"Times New Roman", Helvetica, Arial, sans-serif,"Spline Sans Mono";
+}
+
+.sub {
+  font-size:0.8rem;
+  line-height:0;
 }
 
 .sidebar {
@@ -13,6 +22,12 @@ padding: 20px;
 overflow-y: auto;
 color: #343a40;
 width: 300px;
+}
+
+.blog-post-datetime {
+  font-size:0.8rem;
+  font-weight:200;
+  opacity:0.8;
 }
 
 .main-content {
