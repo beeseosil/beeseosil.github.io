@@ -1,5 +1,5 @@
 html {
-font-family: "Spline Sans Mono", Pretendard, Roboto Sans Mono, Cascadia, "Cascadia Code", sans-serif;
+font-family: "Spline Sans Mono", Pretendard, "Roboto Sans Mono", Cascadia, "Cascadia Code", sans-serif;
 font-size: 1.3rem;
 }
 
@@ -71,10 +71,10 @@ font-weight:200;
 }
 
 .card-body h5 {
-font-size:1.0rem; line-height:0.8rem; margin:0 0 0.2rem 0;
+font-size:1.0rem; margin:0 0 0.1rem 0;
 }
 .card-body p {
-font-size:0.8rem; line-height:0.8rem; margin:0 0 0 0.4rem;
+font-size:0.7rem; margin:0 0 0 0.4rem;
 }
 .fixed-ratio-card .card-img-top {
 aspect-ratio: 2/0.8;
