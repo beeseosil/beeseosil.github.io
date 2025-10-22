@@ -72,11 +72,12 @@
         { file: 'res/gallery_total_250830.jpg', title: '2nd configuration', caption: '' },
         { file: 'res/gallery_total_250916.jpg', title: '3rd configuration', caption: '' },
         { file: 'res/gallery_2nd_250920.jpg', title: '3rd config. 2nd floor', caption: '' },
-        { file: 'res/gallery_3rd_250919.jpg', title: 'Testing ESP32', caption: 'Power lanes are separated for dedicated controls' },
+        { file: 'res/gallery_3rd_250919.jpg', title: 'Testing ESP32', caption: 'Power lanes are being separated' },
         { file: 'res/gallery_broc_250927.jpg', title: 'Broccoli', caption: 'Cute' },
         { file: 'res/gallery_total_250927.jpg', title: 'September 27', caption: '' },
         { file: 'res/gallery_251010.jpg', title: 'October 10', caption: '' },
-        { file: 'res/gallery_251016.jpg', title: 'October 16', caption: '' }
+        { file: 'res/gallery_251016.jpg', title: 'October 16', caption: '' },
+        { file: 'res/gallery_251022.jpg', title: 'October 22', caption: '' }
       ];
 
       fetch('sidebar.html')
@@ -85,8 +86,8 @@
           document.getElementById('sidebar-placeholder').innerHTML = html;
         });
 
-      galleryItems.forEach(item => {
-        insertGalleryCard(item.file, item.title, item.caption);
+      galleryItems.forEach(x => {
+        insertGalleryCard(x.file, x.title, x.caption);
       });
 
       document.getElementById('imageModal').addEventListener('show.bs.modal', event => {
