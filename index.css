@@ -171,6 +171,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid var(--bg-color);
+  aspect-ratio: 3 / 4;
 }
 
 .letter-img-grid {
@@ -187,6 +188,7 @@ body {
   overflow: hidden;
   background-color: var(--bg-color);
   border: 1px solid var(--bg-color);
+  aspect-ratio: 3 / 4;
 }
 
 .letter-img-grid.cols-2 .letter-img-grid-item {
@@ -201,10 +203,10 @@ body {
 
 .letter-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 100%;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .letter-caption {
