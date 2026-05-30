@@ -20,6 +20,10 @@ const defaultJson = {
 <img src='./tomato-3rd-fruit.jpg'>img</img>
 <img src='./tomato-3rd-upper.jpg'>img</img>
 <caption>Tomatoes</caption>
+
+<subtitle>Key Specifications</subtitle>
+<item>Water retention holds up to <emphasize>80 percent</emphasize> capacity.</item>
+<item>Optimized air-to-water ratio for root respiration.</item>
 `
 };
 
@@ -51,6 +55,7 @@ function parseAndRender(jsonString) {
       const children = Array.from(root.childNodes);
       
       let accumulatedImages = [];
+      let accumulatedItems = [];
       
       function flushImages() {
         if (accumulatedImages.length === 0) {
@@ -81,14 +86,38 @@ function parseAndRender(jsonString) {
         accumulatedImages = [];
       }
       
+      function flushItems() {
+        if (accumulatedItems.length === 0) {
+          return;
+        }
+        
+        const ulEl = document.createElement("ul");
+        ulEl.className = "letter-list mb-18";
+        
+        accumulatedItems.forEach(itemNode => {
+          const liEl = document.createElement("li");
+          liEl.className = "letter-main fs-4 mb-6";
+          liEl.innerHTML = parseInlineTags(itemNode);
+          ulEl.appendChild(liEl);
+        });
+        
+        paperCanvas.appendChild(ulEl);
+        accumulatedItems = [];
+      }
+      
       children.forEach(node => {
         if (node.nodeType === Node.ELEMENT_NODE) {
           const tagName = node.tagName.toLowerCase();
           
           if (tagName === "img") {
+            flushItems();
             accumulatedImages.push(node);
+          } else if (tagName === "item") {
+            flushImages();
+            accumulatedItems.push(node);
           } else {
             flushImages();
+            flushItems();
             
             if (tagName === "title") {
               const titleEl = document.createElement("h1");
@@ -116,6 +145,7 @@ function parseAndRender(jsonString) {
       });
       
       flushImages();
+      flushItems();
       articlesContainer.appendChild(paperCanvas);
     });
     
