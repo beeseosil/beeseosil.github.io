@@ -1,0 +1,4 @@
+{
+  "id": "0",
+  "content": "\n<title>Grodan Cultivation Request</title>\n\n<subtitle>System</subtitle>\n<text>The system monitoring setup tracks propagation progress and ambient parameters.</text>\n<img src='./webapp-overview.png'>img</img>\n<caption>System</caption>\n\n<subtitle>Strawberries</subtitle>\n<text>First seedling propagation and second anthesis phases show promising vegetative growth.</text>\n<img src='./strawberry-1st-seedling-propagation.jpg'>img</img>\n<img src='./strawberry-2nd-overview.jpg'>img</img>\n<caption>Strawberries</caption>\n\n<subtitle>Tomatoes</subtitle>\n<text>Tomato starter plants developing healthy root systems inside Grodan cubes.</text>\n<img src='./tomato-3rd-starter.jpg'>img</img>\n<img src='./tomato-3rd-fruit.jpg'>img</img>\n<img src='./tomato-3rd-upper.jpg'>img</img>\n<caption>Tomatoes</caption>\n"
+}
