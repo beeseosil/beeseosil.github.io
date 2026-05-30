@@ -43,7 +43,8 @@ function parseAndRender(jsonString) {
           imgEl.src = accumulatedImages[0].getAttribute("src") || "";
           imgContainer.appendChild(imgEl);
         } else {
-          imgContainer.className = "letter-img-grid";
+          const colCount = accumulatedImages.length;
+          imgContainer.className = "letter-img-grid cols-" + colCount;
           accumulatedImages.forEach(imgNode => {
             const wrapper = document.createElement("div");
             wrapper.className = "letter-img-grid-item";

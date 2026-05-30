@@ -4,7 +4,7 @@
     "<title>Request Letter Appendix</title>",
     "",
     "<subtitle>System</subtitle>",
-    "<text>The system based on ESP32 and shows VPD, water level, and light trends. Remote, scheduled control for 2 water pumps with 80L tank is also provided. Roughly 30000lx @ 30cm with 6000-6500K LED running 13-15 hours seems to enough for tomatoes.</text>",
+    "<text>The system based on ESP32 and shows VPD, water level, and light trends. Remote, scheduled control for 2 water pumps with 80L tank is also provided. Roughly 30000lx @ 30cm with 6000-6500K LED running for 13-15 hours .</text>",
     "  ",
     "  <img src='./webapp-overview.png'>App Overview</img>",
     "<caption>App Overview</caption>",
