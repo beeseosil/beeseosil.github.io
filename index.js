@@ -137,7 +137,7 @@ function parseInlineTags(node) {
   return html;
 }
 
-fetch("article.json")
+fetch("article.json?t=" + new Date().getTime())
   .then(response => response.json())
   .then(data => {
     parseAndRender(JSON.stringify(data));
