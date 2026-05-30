@@ -1,32 +1,3 @@
-const defaultJson = {
-  id: "0",
-  content: `
-<title>Grodan Cultivation Request</title>
-
-<subtitle>System</subtitle>
-<text>The system monitoring setup tracks propagation progress and ambient parameters.</text>
-<img src='./webapp-overview.png'>img</img>
-<caption>System</caption>
-
-<subtitle>Strawberries</subtitle>
-<text>First seedling propagation and second anthesis phases show promising vegetative growth.</text>
-<img src='./strawberry-1st-seedling-propagation.jpg'>img</img>
-<img src='./strawberry-2nd-overview.jpg'>img</img>
-<caption>Strawberries</caption>
-
-<subtitle>Tomatoes</subtitle>
-<text>Tomato starter plants developing healthy root systems inside Grodan cubes.</text>
-<img src='./tomato-3rd-starter.jpg'>img</img>
-<img src='./tomato-3rd-fruit.jpg'>img</img>
-<img src='./tomato-3rd-upper.jpg'>img</img>
-<caption>Tomatoes</caption>
-
-<subtitle>Key Specifications</subtitle>
-<item>Water retention holds up to <emphasize>80 percent</emphasize> capacity.</item>
-<item>Optimized air-to-water ratio for root respiration.</item>
-`
-};
-
 const articlesContainer = document.getElementById("articles-container");
 
 function parseAndRender(jsonString) {
@@ -171,6 +142,12 @@ fetch("article.json")
   .then(data => {
     parseAndRender(JSON.stringify(data));
   })
-  .catch(() => {
-    parseAndRender(JSON.stringify(defaultJson));
+  .catch(error => {
+    articlesContainer.innerHTML = `
+      <div class="alert alert-danger p-24 mb-24">
+        <h4 class="alert-heading font-weight-bold mb-12">Failed to Load article.json</h4>
+        <p class="mb-12">The application could not retrieve the article content dynamically. If you are opening the HTML file directly in your browser (via the file:// protocol), standard security restrictions (CORS) block local data access.</p>
+        <p class="mb-0"><strong>Recommended Fix:</strong> Run a local web server (e.g., <code>python -m http.server</code>) or access your live deployment at <strong>beeseosil.github.io</strong>.</p>
+      </div>
+    `;
   });
