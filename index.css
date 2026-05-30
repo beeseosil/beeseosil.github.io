@@ -177,12 +177,12 @@ body {
   margin-top: 18px;
   margin-bottom: 12px;
   display: flex;
+  flex-direction: row;
   gap: 18px;
   width: 100%;
 }
 
 .letter-img-grid-item {
-  flex: 1;
   border-radius: 6px;
   overflow: hidden;
   background-color: var(--bg-color);
@@ -190,11 +190,13 @@ body {
 }
 
 .letter-img-grid.cols-2 .letter-img-grid-item {
-  max-width: calc((100% - 18px) / 2);
+  flex: 0 0 calc((100% - 18px) / 2);
+  width: calc((100% - 18px) / 2);
 }
 
 .letter-img-grid.cols-3 .letter-img-grid-item {
-  max-width: calc((100% - 36px) / 3);
+  flex: 0 0 calc((100% - 36px) / 3);
+  width: calc((100% - 36px) / 3);
 }
 
 .letter-img {
@@ -219,13 +221,5 @@ body {
   }
   .main-wrapper {
     padding: 18px 12px;
-  }
-  .letter-img-grid {
-    flex-direction: column;
-    gap: 12px;
-  }
-  .letter-img-grid.cols-2 .letter-img-grid-item,
-  .letter-img-grid.cols-3 .letter-img-grid-item {
-    max-width: 100%;
   }
 }
