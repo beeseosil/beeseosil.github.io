@@ -11,7 +11,9 @@ function parseAndRender(jsonString) {
       const paperCanvas = document.createElement("div");
       paperCanvas.className = "paper-canvas p-48 mb-24";
       
-      const contentHtml = article.content;
+      const rawContent = article.content;
+      const contentHtml = Array.isArray(rawContent) ? rawContent.join("\n") : rawContent;
+      
       const parser = new DOMParser();
       const doc = parser.parseFromString(`<root>${contentHtml}</root>`, "text/xml");
       
